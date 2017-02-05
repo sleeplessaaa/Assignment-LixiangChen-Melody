@@ -123,7 +123,7 @@ public class Assignment3 {
     }
     
     public static String decoding(String s) {
-    	if (s == null || s.isEmpty() || (s.length() & 1) == 1) return ""; // it's better to throw en exception here
+    	if (s == null || s.isEmpty() || (s.length() & 1) == 1) return ""; 
         int count = 0;
         StringBuilder result = new StringBuilder();
         for (int i = 0; i < s.length(); i++) {
