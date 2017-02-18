@@ -1,3 +1,6 @@
+/*score:10 + 0(extra credit)
+comments: perfect code!*/
+
 package test;
 /**
  * Created by Rose on 1/27/17.
@@ -14,7 +17,7 @@ public class Assignment3 {
      *  Given an array, reverse the elements within this array and print the result
      *  eg, given{1,2,3,4}, print{4,3,2,1}
      */
-    public void reverseArray(int[] nums) {
+    public void reverseArray(int[] nums) {                   //correct
         int n = nums.length;
         for(int i = 0, j = n/2; i<j; i++){
         	int x = nums[i];
@@ -33,7 +36,7 @@ public class Assignment3 {
      *  The digits are stored such that the most significant digit is at the head of the array.
      *  eg, given {1,2,9}, reutrn{1,3,0}.
      */
-    public int[] plusOne(int[] digits) {
+    public int[] plusOne(int[] digits) {         //correct
     	for(int i=digits.length-1;i>=0;i--){
     	          digits[i] =1+digits[i];           
                   if(digits[i]==10)
@@ -58,7 +61,7 @@ public class Assignment3 {
      *  to isSubstring
      *  eg, "pineapple" is a rotation of "neapplepi"
      */
-    public boolean isRotation(String s1, String s2) {  
+    public boolean isRotation(String s1, String s2) {                   //correct
         if (s1.length() != s2.length())   
             return false;  
         String newStr = s1 + s2;  
@@ -81,7 +84,7 @@ public class Assignment3 {
      *  Given two strings, write a method to decide if one is a permutation of the other
      *  hint: the comparison is case sensitive and whitespace is significant
      */
-    public boolean isPermutation(String s1, String s2) {
+    public boolean isPermutation(String s1, String s2) {         //correct
     	if(s1.length()!=s2.length())
     		return false; 
         boolean[] check = new boolean[s2.length()];
@@ -104,7 +107,7 @@ public class Assignment3 {
      *  the string to be encoded consists of letters of the alphabet, with no digits, and the string to be
      *  decoded is a valid encoding.
      */
-    public static String encoding(String s) {
+    public static String encoding(String s) {           //correct
     	 if (s == null || s.isEmpty()) return "";
     	    int count = 1;
     	    StringBuilder result = new StringBuilder();
@@ -147,7 +150,7 @@ public class Assignment3 {
      *                    7,8,9           9 6 3
      *tip: image could be a square or a rectangle.
      */
-    public void rotate(int[][] matrix) {
+    public void rotate(int[][] matrix) {            //wrong: array index out of bound
     	 int m = matrix.length;
          int n = matrix[0].length;
          int[][] result = new int[m][n];  
@@ -168,7 +171,7 @@ public class Assignment3 {
      * intput is not valid, return -1. A valid parentheses is "()". For example, given "(())", return 2;
      * given "(()))", return -1.
      */
-     public int countValidParentheses(String s) {
+     public int countValidParentheses(String s) {     //wrong: if s is ")(", you should return -1
     	 int leftParentheses = 0;
 		 int rightParentheses = 0;
     	 char[] arr = s.toCharArray();
