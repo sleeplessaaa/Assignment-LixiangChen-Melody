@@ -1,5 +1,5 @@
-/*score:10 + 0(extra credit)
-comments: perfect code!*/
+/*score: 9 + 0(extra credit)
+comments: miss one question: generatePrime()*/
 
 package test;
 /**
