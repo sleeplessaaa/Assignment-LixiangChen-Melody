@@ -7,7 +7,7 @@ public class midTerm{
 		
 	/*  Q1:
 	 */
-	public static void reverse(ArrayList<E> list) {
+	public static void reverse(ArrayList<E> list) {         //correct
 		int n = list.size() - 1;
 		for(int i = 0; i<n; i++){
 			list.add(i, list.remove(n));
@@ -21,7 +21,7 @@ public class midTerm{
 	/*  Q2:
 	*/
 
-	public static String generateStrings(String s1, String s2){
+	public static String generateStrings(String s1, String s2){  //wrong(-4): if s1 is "abc", s2 is "def", your output is "cf"
 		String newStr = "";
 		for(int i=0;i<s1.length();i++){
 			for(int j=0;j<s2.length();j++){
@@ -36,7 +36,7 @@ public class midTerm{
 	/*  Q3:
 	*/
 	
-	public static int singleNumber(int[] nums){
+	public static int singleNumber(int[] nums){    //correct
 		int n = 0;
 		for(int i = 0; i<nums.length; i++){
 			n = n^nums[i];
@@ -49,7 +49,7 @@ public class midTerm{
 	/*  Q4:
 	*/
 	
-	public int[] twoSum(int[] nums, int target){
+	public int[] twoSum(int[] nums, int target){           //correct
 		 int[] result = new int[2];
 		 Map<Integer, Integer> map = new HashMap<>();
 		 for(int i=0;i<nums.length;i++){
@@ -69,7 +69,7 @@ public class midTerm{
 	/*  Q5:
 	*/
 	
-	public List<Integer> getRow(int rowIndex){
+	public List<Integer> getRow(int rowIndex){                    //correct
 		ArrayList<Integer>result = new ArrayList<Integer>();
 		
 		if(rowIndex < 0)
