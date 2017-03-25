@@ -2,7 +2,7 @@ package test;
 
 public class ThirdMax {
 	
-	public int thirdMax(int[] nums) {
+	public int thirdMax(int[] nums) {                    //correct
 		long first = Long.MIN_VALUE;
 	     long second = Long.MIN_VALUE;
 	     long third = Long.MIN_VALUE;
