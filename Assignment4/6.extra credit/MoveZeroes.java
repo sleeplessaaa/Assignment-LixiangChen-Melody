@@ -3,7 +3,7 @@ package test;
 import java.util.Arrays;
 public class MoveZeroes {
 	
-	public static void moveZeroes(int[] nums) {
+	public static void moveZeroes(int[] nums) {          //correct
 		int i=0;
 	    int j=0;
 	 
