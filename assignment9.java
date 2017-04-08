@@ -1,3 +1,5 @@
+/*score: 10
+*/
 1.	Which of the following is true?
 
 A.	A program will terminate only when all user threads stop running.
@@ -44,7 +46,7 @@ A.	prints: A
 B.	prints: 0
 C.	prints: null
 D.	prints: i
-E.	Compile©\time error
+E.	CompileÂ©\time error
 
 ANS:    C
 
@@ -55,7 +57,7 @@ What is the result of attempting to compile and run the program?
 A.	The program compiles and runs fine but prints nothing.
 B.	prints: A
 C.	Compiler error
-D.	An IllegalThreadStateException is thrown at run©\time
+D.	An IllegalThreadStateException is thrown at runÂ©\time
 E.	None of the above
  
 
